@@ -138,8 +138,8 @@ function update {
   fi
   rm -rf ${mallorydir}/current
 
-  echo "retrieving current mallory source from bitbucket"
-  /usr/bin/hg clone https://bitbucket.org/IntrepidusGroup/mallory ${mallorydir}/current
+  echo "retrieving current mallory source from github"
+  /usr/bin/git clone https://github.com/sgabe/mallory.git ${mallorydir}/current
 
   echo "update" > ${UPDATE_DIR}/.next_phase
   exit 0
