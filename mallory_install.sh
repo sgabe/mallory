@@ -75,8 +75,8 @@ function phase1 {
   fi
 
   echo ${mallorydir} > ${UPDATE_DIR}/installdir
-  echo "retrieving current mallory source from bitbucket"
-  /usr/bin/hg clone https://bitbucket.org/IntrepidusGroup/mallory ${mallorydir}/current
+  echo "retrieving current mallory source from github"
+  /usr/bin/git clone https://github.com/sgabe/mallory.git ${mallorydir}/current
 
   echo "phase2" > ${UPDATE_DIR}/.next_phase
   phase2
